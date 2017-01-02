@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Otoleasing.pl</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		body {
+			padding: 50px 0;
+		}
+
+		.header-home {
+			text-align: center;
+			padding: 0 0 50px 0;
+		}
+
+		.img-home {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 15px;
+		}
+
+		.cars-home {
+			text-align: center;
+			padding-bottom: 75px;
+		}
+	</style>
+	</head>
+	<body>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../js/bootstrap.min.js"></script>
+                <script type="text/javascript">
+                    function dodajbaze() {
+                        $.get("add-database.php");
+                        return false;
+                    }
+                    function dodajtabele() {
+                        $.get("add-table.php");
+                        return false;
+                    }
+                    function usuntabele() {
+                        $.get("remove-table.php");
+                        return false;
+                    }
+                    function usunbaze() {
+                        $.get("remove-database.php");
+                        return false;
+                    }
+                    function komunikat() {
+                        alert("Wykonano!");
+                    }
+                </script>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12"><h1 class="header-home">Panel Admin</h1></div>
+					<div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-3 cars-home">
+                                                <button onclick="komunikat();dodajbaze();" class="btn btn-danger" type="submit">Dodaj bazę danych</button>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 cars-home">
+                                                <button onclick="komunikat();dodajtabele();" class="btn btn-danger" type="submit">Dodaj tabelę</button>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 cars-home">
+                                                <button onclick="komunikat();usuntabele();" class="btn btn-danger" type="submit">Usuń tabele</button>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3 cars-home">
+                                                <button onclick="komunikat();usunbaze();" class="btn btn-danger" type="submit">Usuń bazę</button>
+                                            </div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

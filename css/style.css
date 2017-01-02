@@ -1,0 +1,37 @@
+/* styles for all pages */
+body {
+  padding-top: 25px;
+  overflow: scroll;
+}
+
+h1 {
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.logo-skoda {
+  margin: 0 auto 25px;
+  max-height: 150px;
+}
+
+div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+div.row-bottom > div {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* styles for octavia-cofig.html page */
+.button-calucalte {
+  text-align: center;
+  padding: 50px 0 25px 0;
+}
+
+td:nth-child(2) {
+  text-align:right;
+}
