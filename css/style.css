@@ -26,6 +26,15 @@ div.row-bottom > div {
   padding-bottom: 50px;
 }
 
+/* styles for index.html page */
+.carousel-indicators li {
+    border: 1px solid #2e6da4;
+}
+
+.carousel-indicators .active {
+    background-color: #337ab7;
+}
+
 /* styles for octavia-cofig.html page */
 .button-calucalte {
   text-align: center;
