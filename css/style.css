@@ -35,6 +35,15 @@ div.row-bottom > div {
     background-color: #337ab7;
 }
 
+#header-home {
+  padding:0;
+}
+
+#button-home {
+  text-align: center;
+  padding-top: 25px;
+}
+
 /* styles for octavia-cofig.html page */
 .button-calucalte {
   text-align: center;
